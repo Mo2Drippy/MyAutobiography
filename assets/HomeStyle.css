@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #14273d;
+	font-weight: 800;
+	color: #fff;
+	font-size: 22px;
+	font-family: "Roboto";
+	overflox: hidden;
+	
+}
+.navbar{
+	display: grid;
+	grid-template-columns: repeat(5, 400px 1fr 1fr 1fr 1fr);
+	margin-top: 20px;
+	grid-gap: 20px;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+li:nth-child(1){
+	margin-right: 200px
+}
+li:nth-child(2){
+	margin-left: 440px
+}
+.nav-link{
+	text-align: center;
+	padding: 10px 30px;
+	padding-top: 5px;
+	border-radius: 50px;
+}
+.nav-link:not(:first-of-type){
+	background-color: #17375b;
+	transition: transform .3s;
+}
+.nav-link:not(:first-of-type):hover{
+	background-color: #4475e2;
+	cursor: pointer;
+	transform: translateY(6px);
+}
+
+/* home-page style */
+.home-page{
+	display: grid;
+	grid-template-columns: repeat(2, 700px 1fr);
+	align-items: center;
+	margin-top: 50px;
+}
+.home-page-content{
+	margin-left: 60px;
+	margin-bottom: 100px;
+	margin-top: 40px;
+}
+.home-page-content h3{
+	margin-top: -35px;
+	color: #4475e2;
+}
+.home-page-content hr{
+	width: 130px;
+	margin-left: 0px;
+	margin-top: -10px;
+}
+.home-page-content .btn{
+	border: none;
+	outline: none;
+	padding: 15px 45px;
+	background: transparent;
+	border-radius: 50px;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+	transition: transform .3s;
+}
+.home-page-content .btn:hover{
+	transform: translateY(6px);
+}
+.home-page-content .btn1{
+	background: #17375b
+}
+.home-page-content .btn:hover{
+	background-color: #4475e2
+}
+
+.mysocial-media{
+	transform: translateY(80px) translateX(30px);
+}
+.mysocial-media i{
+	font-size: 35px;
+	border: 2px solid #4475e2;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+	transition: all .3s;
+	border-radius: 50%;
+}
+.mysocial-media i:hover{
+	background: #4475e2;
+	color: #fff;
+	transform: translateY(8px);
+}
+
+.home-page-img img{
+	cursor: pointer;
+	position: absolute;
+	top: 20%;
+	right: 8%;
+	width: 400px;
+	height: 400px;
+	border-radius: 70%;
+	border-color: #363635;
+	border-width: 8px;
+	border-style: solid;
+	filter: grayscale(100%);
+	transition: all 800ms;
+}
+.home-page-img img:hover{
+	transform: rotate(360deg);
+	filter: grayscale(0%);
+}
+
+h3
+{
+  font:800 25px Roboto;    
+  width:20ch;
+  white-space:nowrap;
+  overflow:hidden;
+  animation:type 3s steps(20) infinite;
+}
+@keyframes type
+{
+  0%{ width:0; } 
+}
